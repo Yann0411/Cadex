@@ -1,0 +1,25 @@
+BEGIN;
+
+DROP TABLE IF EXISTS noun, adjective, complement, verb CASCADE;
+
+CREATE TABLE noun (
+    id SERIAL PRIMARY KEY,
+    label TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE verb (
+    id SERIAL PRIMARY KEY,
+    label TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE complement (
+    id SERIAL PRIMARY KEY,
+    label TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE adjective (
+    id SERIAL PRIMARY KEY,
+    label TEXT NOT NULL UNIQUE
+);
+
+COMMIT;

@@ -1,0 +1,1 @@
+psql -U yannchristophe -d cadex -f create_tables.sql
